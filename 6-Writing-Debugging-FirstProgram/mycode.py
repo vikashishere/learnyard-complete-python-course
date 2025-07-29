@@ -1,34 +1,61 @@
-# Greet the user by name and calculate age
+# --------------------------------------------
+# 💬 COMMENTS, PRINT STATEMENTS & ESCAPE SEQUENCES
+# --------------------------------------------
 
-name = input("Enter your name: ")
-birth_year = int(input("Enter your birth year: "))
+# This program greets the user and does some basic math
+print("Welcome to the Python Playground!\nLet's get to know you first...")  # \n creates a new line
 
-age = 2025 - birth_year
+# --------------------------------------------
+# 🧠 VARIABLES, DATA TYPES, TYPECASTING & USER INPUT
+# --------------------------------------------
 
-print(f"Hello {name}, you are {age} years old!")
+# Ask user for their name and age
+name = input("Enter your name: ")  # Always returns a string
+age = int(input("Enter your age: "))  # Typecast to integer
 
+# Display a personalized message using escape sequences
+print("Hello", name + "! You're", age, "years old.\nLet's do some quick math! 😊")
 
-# ✅ Introducing a Bug and Fixing It
-# age_calculator_bug.py
+# --------------------------------------------
+# ➕ ARITHMETIC, COMPARISON & LOGICAL OPERATORS
+# --------------------------------------------
 
-name = input("Name: ")
-birth_year = input("Birth Year: ")
+# Ask for two numbers
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
 
-age = 2025 - birth_year      # TypeError here!
-print(name + " is " + age + " years old")
+# Arithmetic operations
+sum_result = num1 + num2
+product = num1 * num2
+division = num1 / num2
 
-# ✅ Fixed Version:
-birth_year = int(input("Birth Year: "))  # Convert to int
-age = 2025 - birth_year
-print(f"{name} is {age} years old")
+# Comparison
+is_equal = num1 == num2
+is_greater = num1 > num2
 
+# Logical example
+both_positive = (num1 > 0) and (num2 > 0)
 
-# ✅ Using Print Debugging
-num = input("Enter a number: ")
-print("You entered:", num)
+print("\n🔢 Results:")
+print("Sum:", sum_result)
+print("Product:", product)
+print("Division:", division)
+print("Are both numbers equal?", is_equal)
+print("Is the first number greater?", is_greater)
+print("Are both numbers positive?", both_positive)
 
-num = int(num)
-print("After conversion:", num)
+# --------------------------------------------
+# 🔤 STRINGS: SLICING, OPERATIONS & METHODS
+# --------------------------------------------
 
-result = num * 10
-print("Final result:", result)
+# Play with user’s name
+print("\n🎭 String Fun:")
+print("Your name in uppercase:", name.upper())
+print("Your name reversed:", name[::-1])  # slicing to reverse
+print("First 3 letters of your name:", name[:3])
+
+# String operations
+greeting = "Hello, " + name + "!"
+print(greeting.replace("Hello", "Hi"))  # Replace part of the string
+
+print("\nThanks for playing, " + name + "! Goodbye! 👋")
