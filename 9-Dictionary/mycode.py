@@ -1,3 +1,9 @@
+# Dict has no indexing
+# Dict is mutable dtype
+# Dict keys - immutable; values - mutable
+# Keys should be unique
+
+
 # ✅ Basic Dictionary Operations
 student = {
     "name": "Ananya",
