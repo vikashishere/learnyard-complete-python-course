@@ -1,0 +1,18 @@
+1. Write a recursive function power(base, exp) to compute base^exp.
+2. Write a recursive function to count digits in a number.
+Example: count_digits(1234) → 4
+
+3. Create a function is_palindrome(s) that checks if a string is a palindrome using recursion.
+4. Write a recursive function sum_of_digits(n) that returns the sum of all digits in a number.
+
+5. Challenge: Solve Tower of Hanoi for n disks and print steps.
+
+def hanoi(n, source, destination, helper):
+    if n == 1:
+        print(f"Move disk 1 from {source} to {destination}")
+        return
+    hanoi(n-1, source, helper, destination)
+    print(f"Move disk {n} from {source} to {destination}")
+    hanoi(n-1, helper, destination, source)
+
+hanoi(3, 'A', 'C', 'B')
