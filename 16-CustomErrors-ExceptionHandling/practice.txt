@@ -1,0 +1,13 @@
+1. Write a program that opens a file and reads its content. Use try-except-finally to handle FileNotFoundError.
+
+2. Ask the user for a positive number. Raise a ValueError if the input is zero or negative.
+
+3. Create a custom exception OutOfRangeError and raise it if a number is not between 1 and 100.
+
+4. Write a program that divides two numbers. Catch and handle ZeroDivisionError and ValueError. Use finally to print "Done."
+
+5. Modify the password validation example to raise a custom exception if:
+The password is < 6 characters
+It doesn’t contain a digit
+
+(Hint: Create a WeakPasswordError class.)

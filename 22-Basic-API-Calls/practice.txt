@@ -1,0 +1,22 @@
+**Please note, some of the given api's might not work in future.**
+
+1. Get a Random Joke
+Call the API:
+https://official-joke-api.appspot.com/random_joke
+Print the setup and punchline.
+
+2. Check Country Info
+Ask the user for a country name and call:
+https://restcountries.com/v3.1/name/{country}
+Print capital, region, and population.
+
+3. Weather App (OpenWeather API)
+Sign up at https://openweathermap.org/api and call the weather API to get temperature and description for a city (API key required).
+
+4. Error Handling Challenge
+Write a function that takes a URL, makes a request, and returns either:
+JSON response (if success), or
+"Error <status_code>" if failure
+
+5. Send Data via POST
+Use https://httpbin.org/post and send your name and favorite language as JSON. Print the response JSON.

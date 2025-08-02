@@ -1,0 +1,20 @@
+1. Write a To-Do List
+Ask user to input 3 tasks
+Save them to todo.txt (one task per line)
+
+2. Append Timestamped Logs
+Append 3 lines of log messages to log.txt with timestamps (use datetime.now())
+
+3. File Analyzer
+Read a file
+Count number of lines and characters
+Print them
+
+4. Reverse File Content
+Read content from story.txt
+Write reversed content to story_reversed.txt
+
+5. Word Frequency Counter
+Read from a file
+Count how many times each word occurs (use dictionary)
+

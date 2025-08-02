@@ -1,0 +1,8 @@
+1. Random Password Generator
+Write a program to generate a random 8-character password using random.choice() from letters, digits, and symbols.
+
+2. Math Practice Quiz
+Create a program that generates two random numbers and asks the user to add/multiply them. Use random and math.
+
+3. Time Calculator
+Take current time and print the time after 5 hours and 30 minutes using datetime and timedelta.

@@ -1,0 +1,19 @@
+1. Enumerate a List of Cities
+cities = ["Delhi", "Mumbai", "Chennai", "Kolkata"]
+# Output:
+# 0: Delhi
+# 1: Mumbai
+# ...
+
+
+2. Custom Start Index
+Print all items of a list starting index from 101.
+
+3. Filter List Using Index
+Given a list of temperatures, increase values only at even indexes by 2.
+
+4. Index Matching Characters in a String
+Write a program that prints positions of all vowels in a given word.
+
+5. Replace List Items Based on Position
+Replace every item at odd index in a list with "REPLACED".

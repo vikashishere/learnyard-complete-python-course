@@ -1,0 +1,12 @@
+1. Create a file math_utils.py
+Define two functions:
+square(n)
+cube(n)
+Add test cases using if __name__ == "__main__" block.
+
+2. Create a script greet.py
+It should take a name using input and greet the user. Make sure this only happens when the script is run directly.
+
+3. Create two files:
+helper.py: contains function reverse_string()
+main.py: import and use reverse_string() without triggering any code from helper.py
