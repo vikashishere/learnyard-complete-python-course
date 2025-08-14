@@ -1,0 +1,4 @@
+1. Create a function that accesses a global variable and prints it.
+2. Try modifying a global variable inside a function without using global — what happens?
+3. Write a function that takes a parameter, modifies it locally, and prints the local and global values.
+4. Create a counter using a global variable that increments every time a function is called.

@@ -1,0 +1,3 @@
+1. Create a class Employee with attributes name and salary. Create a subclass Manager that adds department and overrides a method get_details().
+2. Create a class Shape with a method area(). Create Circle and Rectangle subclasses and override the method to return correct area.
+3. Simulate method overloading in a Greet class that prints different messages based on how many arguments are passed.

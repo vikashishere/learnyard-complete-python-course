@@ -1,0 +1,11 @@
+🔹 1. Create a Book class
+Attributes: title, author
+Method: display() → prints: "Title: <title>, Author: <author>"
+
+🔹 2. Create a Calculator class
+Attributes: num1, num2
+Methods: add(), subtract(), multiply(), divide()
+
+🔹 3. Create a Dog class
+Attributes: name, breed
+Method: bark() → prints: "<name> says Woof!"

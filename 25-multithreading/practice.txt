@@ -1,0 +1,4 @@
+1. Create a script that uses two threads: one prints even numbers and one prints odd numbers.
+2. Simulate downloading 5 files using threads (just use time.sleep()).
+3. Use threading.Lock() to safely update a global counter in multiple threads.
+3. Try to pass different arguments to multiple threads using args=().

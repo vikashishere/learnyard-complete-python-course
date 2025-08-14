@@ -1,0 +1,3 @@
+Create a class Geometry with static methods: area_of_circle(radius) and area_of_square(side).
+Create a class Validator with a static method is_valid_email(email) that checks if @ is present.
+Modify your previous OOP mini project and add one static method for a utility operation (e.g., formatting, cleaning input, etc.).

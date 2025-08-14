@@ -1,0 +1,11 @@
+🔹 1. Create a Movie class
+Attributes: title, genre, rating
+Method: display_info() → prints movie details
+
+🔹 2. Create a TemperatureConverter class
+Attribute: celsius
+Methods: to_fahrenheit(), to_kelvin()
+
+🔹 3. Create a ShoppingItem class
+Attributes: name, price, quantity
+Method: total_price() → returns price * quantity
