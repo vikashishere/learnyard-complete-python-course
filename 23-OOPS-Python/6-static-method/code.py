@@ -1,42 +1,75 @@
-# 🧪 Code Example: Without Static Method
-class MathTool:
-    def square(x):
+# static_method_demo.py
+
+"""
+Part 1: Understanding Static Methods in Python OOP
+--------------------------------------------------
+- Instance methods (self): work with object data
+- Class methods (cls): work with class-level data
+- Static methods: don't need self or cls. Behave like normal functions but
+  are grouped inside a class for logical reasons.
+
+Use @staticmethod decorator when:
+- The method is related to the class but doesn’t need object/class data.
+"""
+
+class MathHelper:
+    # Instance method (needs self)
+    def square(self, x):
         return x * x
 
-print(MathTool.square(5))  # ❌ Error: missing 1 required positional argument
+    # Class method (needs cls)
+    @classmethod
+    def describe(cls):
+        return "This class helps with math operations"
 
-
-# ✅ Using @staticmethod Correctly
-class MathTool:
+    # Static method (no self, no cls)
     @staticmethod
-    def square(x):
-        return x * x
+    def add(a, b):
+        return a + b
+
+
+# --- Demo ---
+helper = MathHelper()
+print("Square of 4 (instance method):", helper.square(4))
+print("Class description (class method):", MathHelper.describe())
+print("Add two numbers (static method):", MathHelper.add(5, 7))
+# Notice: We can call add() using class itself, no object required!
+
+
+"""
+Part 2: Mini Project - Using Static Method as a Counter
+-------------------------------------------------------
+We will create a class `User`. Every time we create a new user object,
+we want to assign a unique user ID. We'll use a static method to manage
+the counter of IDs.
+"""
+
+class User:
+    counter = 0   # class variable to keep track of total users
+
+    def __init__(self, name):
+        # assign unique id by calling static method
+        self.id = User._generate_id()
+        self.name = name
 
     @staticmethod
-    def is_even(n):
-        return n % 2 == 0
-
-# No need to create object
-print(MathTool.square(5))       # 25
-print(MathTool.is_even(10))     # True
-
-
-# You can also call it via instance, but it's not recommended:
-tool = MathTool()
-print(tool.square(7))  # Works, but prefer MathTool.square(7)
+    def _generate_id():
+        """
+        Static method that increments the counter
+        and returns a new unique ID.
+        """
+        User.counter += 1
+        return User.counter
 
 
-# 🎯 Mini Use Case Example
-class Temperature:
-    def __init__(self, celsius):
-        self.celsius = celsius
+# --- Demo ---
+u1 = User("Alice")
+u2 = User("Bob")
+u3 = User("Charlie")
 
-    def to_fahrenheit(self):
-        return (self.celsius * 9/5) + 32
+print(f"{u1.name} has ID {u1.id}")
+print(f"{u2.name} has ID {u2.id}")
+print(f"{u3.name} has ID {u3.id}")
 
-    @staticmethod
-    def kelvin_to_celsius(k):
-        return k - 273.15
-
-print("0°C in F:", Temperature(0).to_fahrenheit())  # Instance method
-print("300K in °C:", Temperature.kelvin_to_celsius(300))  # Static method
+# The counter has increased each time we created a new User object
+print("Total Users created:", User.counter)
